@@ -3,123 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhra JLPT 日本語</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <title>JLPT Japanese Classes by Abralekha</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" />
   <style>
     body {
       margin: 0;
       font-family: 'Noto Sans JP', sans-serif;
-      background: linear-gradient(to bottom, #fff 0%, #fce4ec 100%);
-      color: #2c2c2c;
+      background-color: #121212;
+      color: #ffffff;
     }
     header {
-      background-color: #bf0a30;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
     }
-    header img {
-      width: 40px;
-      margin-right: 10px;
+    header h1 {
+      color: #ff4b4b;
+    }
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #2a2a2a;
     }
     nav a {
-      color: white;
-      text-decoration: none;
+      color: #ffffff;
       margin: 0 15px;
-      font-weight: bold;
+      text-decoration: none;
     }
     .hero {
-      text-align: center;
-      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding: 20px;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #bf0a30;
+    .hero img {
+      max-width: 350px;
+      border-radius: 16px;
     }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 10px;
+    .info {
+      max-width: 600px;
     }
-    .levels {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    .section {
+      padding: 30px;
+      border-top: 1px solid #333;
     }
     .level-card {
-      background: white;
-      border: 2px solid #bf0a30;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background-color: #1f1f1f;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
     }
-    .level-card h2 {
-      color: #bf0a30;
-      margin: 0;
-      font-size: 1.8rem;
+    .calendar, .contact-form {
+      margin-top: 20px;
     }
-    .level-card p {
-      font-size: 0.95rem;
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      margin-bottom: 20px;
     }
     footer {
-      text-align: center;
+      background-color: #1f1f1f;
       padding: 20px;
-      background-color: #bf0a30;
+      text-align: center;
+    }
+    button {
+      padding: 8px 12px;
+      margin-top: 10px;
+      background-color: #ff4b4b;
+      border: none;
+      border-radius: 5px;
       color: white;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero img {
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center;">
-      <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japan Flag">
-      <h2>Abhra JLPT 日本語</h2>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Lessons</a>
-      <a href="#">Practice</a>
-      <a href="#">About</a>
-    </nav>
+    <h1>JLPT Training by Abralekha</h1>
+    <p>Master Japanese with a certified trainer</p>
   </header>
 
-  <section class="hero">
-    <h1>Master Japanese with Confidence</h1>
-    <p>Prepare for JLPT N5 to N1 with expert guidance and structured lessons.</p>
-  </section>
+  <nav>
+    <a href="#levels">JLPT Levels</a>
+    <a href="#videos">Training Videos</a>
+    <a href="#calendar">Availability</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section class="levels">
-    <div class="level-card">
-      <h2>N5</h2>
-      <p>Beginner level: basic phrases, hiragana & katakana.</p>
+  <div class="hero">
+    <img src="trainer_photo_optimized.jpg" alt="Trainer Abralekha" />
+    <div class="info">
+      <h2>Abralekha Nag</h2>
+      <p>Certified JLPT N2 Japanese Trainer with years of experience. Passionate about language education and Japanese culture.</p>
+      <p><strong>Phone:</strong> +91 7099775152</p>
+      <p><strong>Email:</strong> abhralekha@gmail.com</p>
+      <p><a href="https://www.linkedin.com/in/abralekha-nag-06571964/" target="_blank" style="color:#4faaff">LinkedIn Profile</a></p>
     </div>
-    <div class="level-card">
-      <h2>N4</h2>
-      <p>Elementary grammar, kanji, and reading comprehension.</p>
+  </div>
+
+  <div class="section" id="levels">
+    <h2>JLPT Levels & Fee Structure</h2>
+    <div class="level-card"><strong>N5:</strong> ₹5,000 (Basic) - <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank">Syllabus</a></div>
+    <div class="level-card"><strong>N4:</strong> ₹6,000 (Elementary) - <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank">Syllabus</a></div>
+    <div class="level-card"><strong>N3:</strong> ₹7,500 (Intermediate) - <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank">Syllabus</a></div>
+    <div class="level-card"><strong>N2:</strong> ₹9,000 (Upper Intermediate) - <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank">Syllabus</a></div>
+    <div class="level-card"><strong>N1:</strong> ₹11,000 (Advanced) - <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank">Syllabus</a></div>
+  </div>
+
+  <div class="section" id="videos">
+    <h2>Reference JLPT Training Videos</h2>
+    <iframe src="https://www.youtube.com/embed/7wQDXx4YPzA" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Am7e8OL6zpI" allowfullscreen></iframe>
+  </div>
+
+  <div class="section" id="calendar">
+    <h2>Trainer Availability</h2>
+    <p>All slots are booked until July. Bookings open in August!</p>
+    <div class="calendar">
+      <img src="https://i.imgur.com/2iCrVzy.png" alt="Calendar Mockup" style="max-width:100%;" />
     </div>
-    <div class="level-card">
-      <h2>N3</h2>
-      <p>Intermediate level with everyday conversation skills.</p>
-    </div>
-    <div class="level-card">
-      <h2>N2</h2>
-      <p>Advanced grammar, kanji, and business-level Japanese.</p>
-    </div>
-    <div class="level-card">
-      <h2>N1</h2>
-      <p>Fluent-level comprehension of complex texts and nuance.</p>
-    </div>
-  </section>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact & Booking Form</h2>
+    <form action="https://formspree.io/f/mleqlyyb" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="jlpt_level" required>
+        <option value="">Select JLPT Level</option>
+        <option value="N5">N5</option>
+        <option value="N4">N4</option>
+        <option value="N3">N3</option>
+        <option value="N2">N2</option>
+        <option value="N1">N1</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </div>
 
   <footer>
-    &copy; 2025 Abhra JLPT | Learn Japanese with Abhra Sensei
+    <p>&copy; 2025 JLPT Training by Abralekha. All rights reserved.</p>
   </footer>
 </body>
 </html>
